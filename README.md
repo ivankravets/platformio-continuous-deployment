@@ -1,2 +1,2 @@
-# platformio-continuous-deployment-wiring-blink
-Continuous deployment using Wiring/Arduino framework and PIO Remote
+# platformio-continuous-deployment
+Continuous deployment using PIO Remote
