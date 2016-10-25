@@ -8,7 +8,12 @@ install:
     # tmp fix for Microchip gcc-pic32
     - sudo apt-get install -qq lib32z1 lib32ncurses5 lib32bz2-1.0
 
+env:
+    - PLATFORMIO_RUN_ENV=uno
+    - PLATFORMIO_RUN_ENV=nodemcuv2
+    - PLATFORMIO_RUN_ENV=uno_pic32
+
 script:
     - platformio remote agent list
     - platformio remote device list
-    - platformio remote run --target upload
+    - platformio remote run --environment $PLATFORMIO_RUN_ENV --target upload
