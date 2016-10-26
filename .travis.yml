@@ -11,6 +11,7 @@ install:
 env:
     - PLATFORMIO_RUN_ENV=uno
     - PLATFORMIO_RUN_ENV=nodemcuv2
+    - PLATFORMIO_RUN_ENV=teensy31
     - PLATFORMIO_RUN_ENV=uno_pic32
 
 script:
